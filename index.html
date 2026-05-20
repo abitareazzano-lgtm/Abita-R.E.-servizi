@@ -35,7 +35,7 @@
     content: '';
     position: fixed;
     inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' result='noise'/%3E%3CfeColorMatrix in='noise' type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='256' height='256' fill='%230D0D0D' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
     pointer-events: none;
     z-index: 999;
     opacity: 0.4;
@@ -856,7 +856,7 @@
 </head>
 <body>
 
-<!-- ══════════════════════════════════════ HERO ══════════════════════════════════════ -->
+<!-- ══════════════════════════════════════ HERO ═══════════════════════════════════ -->
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-line-decor"></div>
@@ -900,7 +900,7 @@
   </div>
 </section>
 
-<!-- ══════════════════════════════════════ CONFRONTO ══════════════════════════════════════ -->
+<!-- ══════════════════════════════════════ CONFRONTO ═════════════════════════════════════ -->
 <section class="section-confronto">
   <div class="confronto-header">
     <div class="section-eyebrow">La vera differenza</div>
@@ -974,7 +974,7 @@
   </div>
 </section>
 
-<!-- ══════════════════════════════════════ PROCESSO ══════════════════════════════════════ -->
+<!-- ══════════════════════════════════════ PROCESSO ═════════════════════════════════════ -->
 <section class="section-processo" id="processo">
   <div class="processo-header reveal">
     <div class="section-eyebrow" style="color: var(--gold); margin-bottom: 1rem; font-size: 0.65rem; letter-spacing: 0.4em; text-transform: uppercase; display: flex; align-items: center; gap: 1rem;">
@@ -1000,130 +1000,107 @@
     </div>
     <div class="processo-step reveal reveal-delay-2">
       <div class="step-num">03</div>
-      <span class="step-tag">Valorizzazione</span>
-      <h3 class="step-title">Interventi Mirati</h3>
-      <p class="step-desc">Home staging, migliorie estetiche selezionate, foto professionali. Solo quello che genera ritorno reale sul prezzo finale.</p>
-      <div class="step-unique">★ Rete artigiani esclusiva — prezzi riservati</div>
+      <span class="step-tag">Esecuzione</span>
+      <h3 class="step-title">Home Staging e Comunicazione</h3>
+      <p class="step-desc">Ogni spazio racconta una storia. Foto, video, virtuale. Creiamo emozione. Attiriamo i veri compratori, non i curiosi.</p>
     </div>
     <div class="processo-step reveal reveal-delay-3">
       <div class="step-num">04</div>
-      <span class="step-tag">Chiusura</span>
-      <h3 class="step-title">Vendita al Massimo</h3>
-      <p class="step-desc">Gestione trattative con metodo. Nessun ribasso ceduto per stanchezza. Un obiettivo solo: il massimo valore per te.</p>
+      <span class="step-tag">Trattative</span>
+      <h3 class="step-title">Vendita al Giusto Valore</h3>
+      <p class="step-desc">Gestione trattative con metodo. Un obiettivo soltanto: il giusto valore alla tua casa.</p>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════════ RETE ARTIGIANI ══════════════════════════════════════ -->
+<!-- ══════════════════════════════════════ ANTICIPAZIONE ════════════════════════════════════ -->
 <section class="section-anticipazione">
   <div class="anticipazione-inner">
-    <div class="anticipazione-left reveal">
-      <div class="anticipazione-eyebrow">Il vantaggio che nessuna agenzia ti offre</div>
-      <h2 class="anticipazione-title">Interventi a prezzi<br>che non troveresti<br><em style="font-style:italic;color:var(--gold-light);">mai da solo.</em></h2>
+    <div class="anticipazione-left">
+      <div class="anticipazione-eyebrow">Il servizio</div>
+      <h2 class="anticipazione-title">Anticipazione Liquida</h2>
       <p class="anticipazione-body">
-        In 18 anni abbiamo costruito una <strong>rete privata di artigiani selezionati</strong> — idraulici, imbianchini, elettricisti, stuccatori, falegnami — che lavorano con noi in modo continuativo.<br><br>
-        Il risultato? Quando proponiamo interventi di valorizzazione per la tua casa, accedi a <strong>prezzi riservati, significativamente più bassi di quelli di mercato</strong>. Non sconti simbolici: risparmi reali che rendono ogni intervento immediatamente conveniente rispetto al valore che aggiunge alla vendita.<br><br>
-        Ti diciamo cosa fare, coordiniamo i lavori, supervisioniamo il risultato. <strong>Tu approvi e paghi direttamente l'artigiano.</strong> Nessuna maggiorazione, nessuna intermediazione opaca.
+        Non aspettare mesi per vendere. Crediamo nel valore della tua casa <strong>già oggi</strong>.
       </p>
-      <div class="anticipazione-disclaimer">
-        Proponiamo solo gli interventi con un ritorno stimato positivo sul prezzo di vendita. Se non conviene, te lo diciamo chiaramente.
-      </div>
+      <p class="anticipazione-body">
+        Analizza la proprietà, valutiamo, sottoscriviamo una promessa di acquisto, <strong>e tu ricevi l'80% del valore stimato in 48 ore</strong>. Continui a vivere nella casa. Quando venduta, incassi il prezzo finale. Zero stress, 100% trasparenza.
+      </p>
+      <p class="anticipazione-disclaimer">
+        Il servizio è disponibile per proprietà in ambito brescia e zone limitrofe. Richiedi consulenza per verificare l'idoneità.
+      </p>
     </div>
 
-    <div class="anticipazione-right reveal reveal-delay-2">
+    <div class="anticipazione-right">
       <div class="anticipazione-card">
-        <div class="anticipazione-card-num">–40%</div>
-        <div class="anticipazione-card-label">risparmio medio sul costo degli interventi rispetto ai prezzi di mercato standard, grazie alla nostra rete artigiani dedicata.</div>
+        <div class="anticipazione-card-num">80%</div>
+        <div class="anticipazione-card-label">del valore stimato, liquidato in 48 ore</div>
       </div>
       <div class="anticipazione-card">
-        <div class="anticipazione-card-num">×3</div>
-        <div class="anticipazione-card-label">ritorno medio stimato: ogni euro investito negli interventi giusti genera mediamente 3 euro in più sul prezzo finale.</div>
+        <div class="anticipazione-card-num">0</div>
+        <div class="anticipazione-card-label">commissioni nascoste o sorprese finali</div>
       </div>
       <div class="anticipazione-card">
-        <div class="anticipazione-card-num">18 anni</div>
-        <div class="anticipazione-card-label">di relazioni costruite con professionisti del territorio. Non chiamiamo chiunque — chiamiamo le persone giuste.</div>
+        <div class="anticipazione-card-num">∞</div>
+        <div class="anticipazione-card-label">tranquillità: vendi a tuo ritmo, con la certezza del prezzo</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════════ CTA FINALE ══════════════════════════════════════ -->
+<!-- ══════════════════════════════════════ DOMANDA PROVOCATORIA ══════════════════════════════════════ -->
+<section class="section-domanda">
+  <div class="domanda-pre">Una domanda lecita</div>
+  <h2 class="domanda-title">Perché dovresti scegliere <em>Abitar.e.</em></h2>
+  <p class="domanda-body">
+    Perché <strong>non vendiamo case: creiamo soluzioni.</strong> Ogni cliente non è un numero. La tua casa non è un'altra inserzione. Investiamo, strategizziamo, e lottiamo affinché tu ottenga davvero il massimo dal tuo immobile. Zero pressione, massima trasparenza, una sola promessa: il giusto valore, il tuo valore.
+  </p>
+</section>
+
+<!-- ══════════════════════════════════════ CTA ════════════════════════════════════════════════════════════ -->
 <section class="section-cta">
-  <div class="cta-inner reveal">
-    <div class="cta-eyebrow">Provincia di Brescia — Consulenza senza impegno</div>
-    <h2 class="cta-title">Sei sicuro che la tua casa<br>non valga <em style="font-style:italic;color:var(--gold);">molto di più?</em></h2>
-    <p class="cta-body">La maggior parte dei proprietari lascia tra i 15.000€ e i 45.000€ sul tavolo — non per colpa del mercato, ma per come la vendita viene impostata. Dieci minuti al telefono possono cambiare tutto.</p>
+  <div class="cta-inner">
+    <div class="cta-eyebrow">Inizia qui</div>
+    <h2 class="cta-title">Il primo passo?</h2>
+    <p class="cta-body">
+      Una consulenza gratuita. Niente compromessi, niente presunzioni. Solo una chiacchierata tra professionisti per capire se possiamo davvero aiutarti.
+    </p>
 
     <div class="cta-actions">
       <a href="tel:0309719995" class="btn-tel">
-        <div class="btn-tel-icon">📞</div>
+        <div class="btn-tel-icon">☎</div>
         030 971 9995
       </a>
-      <a href="tel:0309719995" class="btn-primary" style="padding: 1rem 2rem; font-size: 0.8rem;">
-        Check-up gratuito — chiama ora
-      </a>
     </div>
-
-    <div class="cta-note">Disponibile dal Lunedì al Sabato · Nessun impegno · Risposta entro 2 ore</div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════════ FOOTER ══════════════════════════════════════ -->
+<!-- ══════════════════════════════════════ FOOTER ════════════════════════════════════════════════════════════ -->
 <footer>
-  <div class="footer-logo">A<span>B</span>ITAR.E. <span style="font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:300;color:var(--warm-grey);letter-spacing:0.15em;text-transform:uppercase;">Studio Immobiliare</span></div>
-  <div class="footer-meta">Provincia di Brescia · 18 anni di esperienza</div>
+  <div class="footer-logo">
+    A<span>B</span>ITAR.E.
+  </div>
+  <div class="footer-meta">
+    © 2025 Abitar.e — Studio Immobiliare Brescia — Valorizzazione Immobili
+  </div>
 </footer>
 
 <script>
-  // Scroll reveal
-  const reveals = document.querySelectorAll('.reveal');
+  // Scroll reveal effect
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
       }
     });
-  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-  reveals.forEach(el => observer.observe(el));
+  }, observerOptions);
 
-  // Smooth number counter for hero stats
-  function animateCounter(el, target, suffix = '', prefix = '') {
-    let start = 0;
-    const duration = 1800;
-    const step = (timestamp) => {
-      if (!start) start = timestamp;
-      const progress = Math.min((timestamp - start) / duration, 1);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      el.textContent = prefix + Math.floor(eased * target) + suffix;
-      if (progress < 1) requestAnimationFrame(step);
-    };
-    requestAnimationFrame(step);
-  }
-
-  const statsObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        statsObserver.unobserve(entry.target);
-        const statNums = entry.target.querySelectorAll('.stat-num');
-        if (statNums[0]) { animateCounter(statNums[0], 30, 'K€', '+'); }
-        if (statNums[1]) { statNums[1].textContent = '–40%'; }
-        if (statNums[2]) {
-          let s = 0; const d = 1800;
-          const step = (ts) => {
-            if (!s) s = ts;
-            const p = Math.min((ts - s) / d, 1);
-            const e = 1 - Math.pow(1 - p, 3);
-            statNums[2].textContent = Math.ceil(e * 3) + ' sett.';
-            if (p < 1) requestAnimationFrame(step);
-          };
-          requestAnimationFrame(step);
-        }
-      }
-    });
-  }, { threshold: 0.5 });
-
-  const heroStats = document.querySelector('.hero-stats');
-  if (heroStats) statsObserver.observe(heroStats);
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 </script>
+
 </body>
 </html>
